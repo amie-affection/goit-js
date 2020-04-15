@@ -10,7 +10,7 @@
 Присвой товару новую цену - 2000
 Используя шаблонную строку выведи в консоль информацию о товаре, получится: 'Выбран «Генератор защитного поля», цена за штуку 2000 кредитов'. */
 
-let name = 'Генератор защитного поля';
+/* let name = 'Генератор защитного поля';
 let price = 1000;
 
 let string = `Выбран "${name}", цена за штуку ${price} кредитов.`;
@@ -18,7 +18,7 @@ console.log(string);
 
 let price1 = new String(2000);
 let str1 = `Выбран "${name}", цена за штуку ${price1} кредитов.`;
-console.log(str1);
+console.log(str1); */
 
 //Задание 2
 
@@ -33,17 +33,17 @@ console.log(str1);
 const total = 100;
 const ordered = 50; */
 
-const total = 100; // количество товаров на складе
+/* const total = 100; // количество товаров на складе
 const ordered = 50; // единиц товара в заказе
-const value = 130;
+const value = 10;
 
 const isInRange = value <= 100 && value >= 1;
 
 if(isInRange) {
     console.log('Заказ оформлен, с вами свяжется менеджер');
-}
-
-console.log('На складе недостаточно товаров!');
+} else {
+    console.log('На складе недостаточно товаров!');
+} */
 
 // Задание 3
 
@@ -169,7 +169,7 @@ alert(message); */
 
 /* Напиши скрипт который просит посетителя ввести число в prompt до тех пор, пока посетитель на нажмет Cancel и каждый раз добавляет введенное значение к общей сумме. */
 
-let input3;
+/* let input3;
 let total = 0;
 
 do {
@@ -180,4 +180,4 @@ do {
   } while (input3 !== null);
 
 
-  console.log(total);
+  console.log(total); */
