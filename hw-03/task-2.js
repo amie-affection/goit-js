@@ -11,9 +11,12 @@ for (const key in keys) {
     console.log(key);
 
     total += 1;
+
 };
 
 console.log('Total: ', total);
+
+return total;
 
 };
 
