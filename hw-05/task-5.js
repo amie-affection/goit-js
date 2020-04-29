@@ -65,8 +65,6 @@ class Car {
   accelerate(value) {
     if (this.speed + value <= this.maxSpeed) {
       this.speed += value;
-    } else {
-      this.speed = this.maxSpeed;
     }
   }
 
@@ -77,10 +75,8 @@ class Car {
   decelerate(value) {
     if (this.speed - value >= 0) {
       this.speed -= value;
-    } else {
-      this.speed = 0;
     }
-  }
+    }
 
   /*
    * Добавляет в поле distance киллометраж (hours * speed),
