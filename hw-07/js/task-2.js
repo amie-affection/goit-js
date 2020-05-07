@@ -11,3 +11,10 @@ const ingredients = [
     'Зелень',
     'Приправы',
   ];
+
+  const ulIngredients = document.querySelector('#ingredients');
+
+  const markup = ingredients
+  .map(item => `<li>${item}</li>`)
+  .join('');
+  console.log(markup);

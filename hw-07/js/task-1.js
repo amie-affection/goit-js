@@ -16,6 +16,12 @@ const ul = document.querySelector('ul').children.length;
 // console.log(ul);
 console.log(`В списке ${ul} категории.`);
 
-const item = document.querySelector('h2');
-// console.log(item);
-console.log(`Категория: ${item}`);
+
+const items = document.querySelectorAll('.item');
+Array.prototype.forEach.call(items, (element) => {
+    const title = element.querySelector('h2').innerHTML;
+    const itemsLength = element.querySelectorAll('li').length;
+    console.log(`
+    Категория: ${title}
+    Количество элементов: ${itemsLength}`);
+});

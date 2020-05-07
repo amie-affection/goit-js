@@ -9,14 +9,28 @@
 
 // Для добавления стилей, используй CSS-классы valid и invalid.
 
-#validation-input {
-  border: 3px solid #bdbdbd;
-}
+// document.getElementById("validation-input").addEventListener('blur') = function() {
+//   console.log(this.value.length);
+//   if (this.getAttribute('data-length') > this.value.length) { 
+//     this.classList.remove('valid');
+//     this.classList.add('invalid');
+//   } else {
+//     this.classList.remove('invalid');
+//     this.classList.add('valid');
+//   }
+// };
 
-#validation-input.valid {
-  border-color: #4caf50;
-}
+const borderInput = document.querySelector('#validation-input');
 
-#validation-input.invalid {
-  border-color: #f44336;
-}
+borderInput.addEventListener('blur', focusInput);
+
+function focusInput(event) {
+  // console.log(event.currentTarget.value.length);
+  if(event.currentTarget.value.length === 6) {
+    event.currentTarget.classList.add('valid');
+    event.currentTarget.classList.remove('invalid')
+  } else {
+    event.currentTarget.classList.add('invalid');
+    event.currentTarget.classList.remove('valid')
+  }
+};

@@ -1,0 +1,39 @@
+html {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+#gallery {
+    list-style: none;
+    display: flex;
+    width: 100%;
+}
+
+#gallery li {
+    margin-right: 20px;
+}
+
+#counter {
+    margin-bottom: 30px;
+}
+
+#validation-input {
+    border: 3px solid #bdbdbd;
+  }
+  
+  #validation-input.valid {
+    border-color: #4caf50;
+  }
+  
+  #validation-input.invalid {
+    border-color: #f44336;
+  };
