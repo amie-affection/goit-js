@@ -18,3 +18,5 @@ const ingredients = [
   .map(item => `<li>${item}</li>`)
   .join('');
   console.log(markup);
+
+  ulIngredients.insertAdjacentHTML('beforeend', markup);
