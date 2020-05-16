@@ -131,4 +131,5 @@ function closeModalEscape(event) {
 
     currentTarget = nextImg;
   }
+  window.removeEventListener("keydown", closeModalEscape);
 }
