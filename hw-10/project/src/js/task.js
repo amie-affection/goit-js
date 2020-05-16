@@ -9,3 +9,8 @@
 // Если при загрузке страницы тема тёмная, не забудь поставить
 // свойство checked у чекбокса input.js -switch-input в true,
 // чтобы ползунок сдвинулся в правильное положение.
+
+import list from '../menu.json';
+import templateItem from '../templates/menu-items.hbs';
+
+console.log(list);
