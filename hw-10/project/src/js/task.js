@@ -16,7 +16,7 @@ import templateItem from '../templates/menu-items.hbs';
 // console.log(list);
 // console.log(templateItem);
 
-const markup = templateItem(list[0]);
+const markup = templateItem(list[1]);
 
 // console.log(markup);
 
@@ -24,14 +24,13 @@ const refs = {
     foodItem: document.querySelector('.js-menu')
 }
 
-refs.foodItem.insertAdjacentHTML('beforeend', markup);
-
-buildFoodList(list);
 
 function buildFoodList(list) {
     const markup = list.map(item => templateItem(item)).join('');
-
+    
     // console.log(markup);
-
+    
     refs.foodItem.insertAdjacentHTML('beforeend', markup);
 }
+
+buildFoodList(list)
