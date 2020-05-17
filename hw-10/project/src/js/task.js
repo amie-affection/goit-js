@@ -3,7 +3,7 @@
 
 // По умолчанию тема светлая.
 // При изменении темы, необходимо добавлять на элемент body класс
-// light - theme или dark - theme.
+// light-theme или dark-theme.
 // Выбранная тема должна сохраняться между перезагрузками страницы.
 // Для хранения активной темы используй localStorage.
 // Если при загрузке страницы тема тёмная, не забудь поставить
@@ -13,4 +13,25 @@
 import list from '../menu.json';
 import templateItem from '../templates/menu-items.hbs';
 
-console.log(list);
+// console.log(list);
+// console.log(templateItem);
+
+const markup = templateItem(list[0]);
+
+// console.log(markup);
+
+const refs = {
+    foodItem: document.querySelector('.js-menu')
+}
+
+refs.foodItem.insertAdjacentHTML('beforeend', markup);
+
+buildFoodList(list);
+
+function buildFoodList(list) {
+    const markup = list.map(item => templateItem(item)).join('');
+
+    // console.log(markup);
+
+    refs.foodItem.insertAdjacentHTML('beforeend', markup);
+}
