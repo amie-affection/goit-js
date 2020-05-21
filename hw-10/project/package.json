@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amie-affection"
+    "url": "git+https://github.com/amie-affection.git"
   },
   "keywords": [],
   "author": "Amie Affection",
@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/amie-affection"
   },
-  "homepage": "https://github.com/amie-affection",
+  "homepage": "https://amie-affection.github.io/goit-js",
   "devDependencies": {
     "@babel/core": "^7.8.7",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
